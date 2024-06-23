@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>☕</title>
+    <style>
+      .container div {
+        width: 400px;
+        height: 400px;
+        border: 2px solid #000;
+        border-radius: 50%;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .container button {
+        padding: 10px 40px;
+        background-color: #fc07d3;
+        color: #fff;
+        font-size: 18px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-top: 40px;
+        margin-left: 70px;
+      }
+      @media screen and (max-width: 768px) {
+        .container div {
+          width: 300px;
+          height: 300px;
+        }
+        .container button {
+          padding: 20px 30px;
+          font-size: 18px;
+          margin-left: 50px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <div id="light"></div>
+        <button id="on">On</button>
+        <button id="off">Off</button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
